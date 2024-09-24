@@ -1,0 +1,21 @@
+import pandas as pd 
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, classification_report
+data = pd.read_csv('drug200.csv')
+X = data.iloc[:, :5].astype(str)
+y = data.iloc[:,5]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+vectorizer = CountVectorizer(binary=True)
+X_train_vectorized = vectorizer.fit_transform(X_train.apply(lambda x: ' '.join(x), axis=1))
+X_test_vectorized = vectorizer.transform(X_test.apply(lambda x: ' '.join(x), axis=1))
+brn = BernoulliNB()
+brn.fit(X_train_vectorized, y_train)
+y_pred = brn.predict(X_test_vectorized)
+print(f"Nhãn dự đoán: {y_pred}")
+print(f"Nhãn thực tế: {y_test.values}")
+
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Độ chính xác: {accuracy:.2f}")
