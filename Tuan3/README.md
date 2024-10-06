@@ -3,3 +3,15 @@ BT1.
 1. Công nghệ sử dụng Frameworks: NumPy ,Pandas ,Scikit-learn
 2. Thuật toán
 Naive Bayes 
+
+BT2.
+![Screenshot 2024-10-06 131737](https://github.com/user-attachments/assets/2a5512ca-667f-4f19-a831-35adaff3e7fb)
+1. Công nghệ sử dụng Frameworks: NumPy ,Pandas ,Scikit-learn
+2. Thuật toán
+Naive Bayes
+
+BT3. 
+![Screenshot 2024-10-06 131110](https://github.com/user-attachments/assets/d7a67f1b-2ab3-474f-92d0-0c6d19a07e8d)
+1. Công nghệ sử dụng Frameworks: NumPy ,Pandas ,Scikit-learn
+2. Thuật toán
+Naive Bayes
