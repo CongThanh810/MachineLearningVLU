@@ -8,3 +8,4 @@ Hard Margin SVM :
 - Sử dụng phương pháp tối ưu hóa bậc hai để tìm ra trọng số 
 Soft Margin SVM :
 - Được sử dụng khi dữ liệu không thể tách biệt hoàn toàn (có nhiễu hoặc chồng chéo).
+![z5953902912696_5a4de7873a0d63c68942aedd4624689a](https://github.com/user-attachments/assets/4af921a6-b014-4eee-8582-6c29da6d6968)
